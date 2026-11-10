@@ -1,0 +1,72 @@
+RELATIONSHIP COMPATIBILITY EVALUATION SYSTEM
+Presentation Script (approximately 2–3 minutes)
+
+Good day everyone.
+
+Today, I am presenting my Python project, the Relationship Compatibility Evaluation System.
+
+1. Project purpose
+
+The purpose of this program is to provide a structured way to assess reported alignment between two people's relationship expectations and values. In this first version, the program evaluates answers provided by one participant against a set of predefined criteria.
+
+2. Eligibility check
+
+Before the assessment begins, the program asks the participant whether they are a Christian. This is a mandatory eligibility condition for this version of the program. If the participant answers NO, the assessment ends without calculating or displaying a compatibility score. If the participant answers YES, the questionnaire begins.
+
+3. Assessment parameters
+
+The questionnaire contains nine parameters:
+- Honesty – 15%
+- Loyalty – 15%
+- Communication – 10%
+- Shared values – 10%
+- Long-term commitment – 10%
+- Purpose – 10%
+- Financial responsibility – 10%
+- Emotional maturity – 10%
+- Trustworthiness – 10%
+
+The weights add up to 100%. Honesty and loyalty carry 15% each, while the other seven parameters carry 10% each.
+
+4. Questions and answer scoring
+
+There are three scenario-based questions under each parameter, making 27 questions in total. Each question has four possible answers: A, B, C and D.
+
+The program converts the selected answers into numerical scores:
+A equals 0, B equals 3, C equals 7, and D equals 10.
+
+The program also checks that the participant enters a valid option. If the participant enters something other than A, B, C or D, the program asks them to try again.
+
+5. How the score is calculated
+
+First, the program adds the three answer scores for each parameter and divides the result by three. This gives an average score out of 10 for that parameter.
+
+Next, it calculates the weighted contribution of each parameter using this formula:
+
+(parameter average / 10) × parameter weight
+
+Finally, it adds all nine weighted contributions to produce the overall score as a percentage.
+
+The program then places the result into one of six interpretation bands:
+- 90–100%: Very strong alignment
+- 80–below 90%: Strong alignment
+- 70–below 80%: Good alignment
+- 60–below 70%: Moderate alignment
+- 50–below 60%: Limited alignment
+- Below 50%: Low alignment
+
+The report also displays the average and weighted contribution for each parameter.
+
+6. Python concepts used
+
+Some of the Python concepts used in this project include dictionaries, lists, loops, conditional statements, functions, user input, input validation, arithmetic operations, and formatted strings.
+
+I also used loops to process the parameters dynamically, rather than writing separate scoring instructions for every parameter.
+
+7. Limitations and conclusion
+
+This program is based on self-reported answers. It cannot independently verify someone's honesty, loyalty or other personal qualities, and it cannot guarantee that a relationship will succeed. The score should therefore be treated as an indication of alignment with the program's chosen criteria, not as an objective judgement of a person's character.
+
+This is the first version of the project. Future improvements could include saving assessment results, comparing answers from both partners, and generating more detailed reports.
+
+Thank you.
